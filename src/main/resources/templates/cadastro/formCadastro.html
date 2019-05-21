@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+	xmlns:layout="http://ultraq.net.nz/thymeleaf/layout">
+<head>
+
+<title>Agenda APP</title>
+<!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      
+</head>
+<body>
+  <div class="card-panel teal lighten-2"><h2 class="white-text text-darken-2">Lista de Contatos</h2></div>  
+
+<h4><a href="/cadastros" class="waves-effect waves-light btn"><i class="material-icons left">assignment</i>Cadastros</a></h4>
+
+	<h4>Cadastro de Contato:</h4>
+	<h5><th:block th:include="mensagemValidacao" ></th:block></h5>
+	
+	<form class="container" method="post">
+	<div class="row">		
+    <div class="input-field col s5 ">
+		Nome: <input  TYPE="text" value="" name="nome"> 
+		</div>
+		<div class="input-field col s5">
+		Telefone:<input TYPE="text" value="" name="telefone"> 
+		</div></div>
+		
+		
+		
+	<button class="waves-effect waves-light btn" type="submit" >Salvar</button>
+	</form>
+	<!--JavaScript at end of body for optimized loading-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+
+</body>
+
+
+</html>
